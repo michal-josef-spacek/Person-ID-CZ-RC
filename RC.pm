@@ -153,7 +153,7 @@ sub _parse {
 		}
 		$self->{'day'} = $3;
 		$self->{'serial'} = $4;	
-		$self->{'checksum'} = undef;
+		$self->{'checksum'} = '-';
 		if ($self->{'year'} <= 1953) {
 			$self->{'validity'} = 1;
 		} else {
