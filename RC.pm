@@ -108,7 +108,9 @@ sub _check_validity {
 # Parse.
 sub _parse {
 	my $self = shift;
-	if ($self->{'rc'} =~ m/^(\d\d)(\d\d)(\d\d)\/(\d\d\d)(\d)$/ms) {
+	if ($self->{'rc'} =~ m/^(\d\d)(\d\d)(\d\d)\/(\d\d\d)(\d)$/ms
+		|| $self->{'rc'} =~ m/^(\d\d)(\d\d)(\d\d)(\d\d\d)(\d)$/ms) {
+
 		$self->{'year'} = 1900 + $1;
 		if ($2 > 70) {
 			$self->{'alternate'} = 1;
@@ -135,7 +137,9 @@ sub _parse {
 		$self->_check_validity;
 
 	# To 31. 12.1953.
-	} elsif ($self->{'rc'} =~ m/^(\d\d)(\d\d)(\d\d)\/(\d\d\d)$/ms) {
+	} elsif ($self->{'rc'} =~ m/^(\d\d)(\d\d)(\d\d)\/(\d\d\d)$/ms
+		|| $self->{'rc'} =~ m/^(\d\d)(\d\d)(\d\d)(\d\d\d)$/ms) {
+
 		$self->{'year'} = 1900 + $1;
 		if ($2 > 50) {
 			$self->{'month'} = $2 - 50;
