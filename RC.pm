@@ -93,7 +93,10 @@ sub year {
 # Check validity.
 sub _check_validity {
 	my $self = shift;
-	my $checksum = $self->{'serial'} % 11;
+	my $number = $self->{'rc'};
+	$number =~ s/\///ms;
+	$number = substr $number, 0, 9;
+	my $checksum = $number % 11;
 	if ($checksum == 10) {
 		$checksum = 0;
 	}
