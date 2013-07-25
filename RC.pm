@@ -159,6 +159,7 @@ sub _parse {
 		} else {
 			$self->{'validity'} = 0;
 		}
+		$self->{'alternate'} = 0;
 
 	# Not valid.
 	} else {
