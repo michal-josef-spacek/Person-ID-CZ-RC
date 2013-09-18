@@ -271,7 +271,7 @@ Person::ID::CZ::RC - Perl class for Czech RC identification.
  use warnings;
 
  # Modules.
- use Person::ID::RC::CZ;
+ use Person::ID::CZ::RC;
 
  # Object.
  my $obj = Person::ID::CZ::RC->new(
@@ -279,14 +279,15 @@ Person::ID::CZ::RC - Perl class for Czech RC identification.
  );
 
  # Print out.
- print "Personal number: ".$rc->rc."\n";
- print "Year: ".$rc->year."\n";
- print "Month: ".$rc->month."\n";
- print "Day: ".$rc->day."\n";
- print "Sex: ".$rc->sex."\n";
- print "Serial: ".$rc->serial."\n";
- print "Checksum: ".$rc->checksum."\n";
- print "Alternate: ".$rc->alternate."\n";
+ print "Personal number: ".$obj->rc."\n";
+ print "Year: ".$obj->year."\n";
+ print "Month: ".$obj->month."\n";
+ print "Day: ".$obj->day."\n";
+ print "Sex: ".$obj->sex."\n";
+ print "Serial: ".$obj->serial."\n";
+ print "Checksum: ".$obj->checksum."\n";
+ print "Alternate: ".$obj->alternate."\n";
+ print "Valid: ".$obj->is_valid."\n";
 
  # Output:
  # Personal number: 840501/1330
