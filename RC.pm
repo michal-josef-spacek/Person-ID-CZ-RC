@@ -6,6 +6,8 @@ use warnings;
 
 # Modules.
 use Class::Utils qw(set_params);
+use DateTime;
+use English qw(-no_match_vars);
 use Error::Pure qw(err);
 
 # Version.
@@ -165,6 +167,19 @@ sub _parse {
 	} else {
 		$self->{'validity'} = 0;
 	}
+
+	# Check date.
+	eval {
+		DateTime->new(
+			'year' => $self->{'year'},
+			'month' => $self->{'month'},
+			'day' => $self->{'day'},
+		);
+	};
+	if ($EVAL_ERROR) {
+		$self->{'validity'} = 0;
+	}
+
 	return;
 }
 
@@ -264,7 +279,7 @@ Person::ID::CZ::RC - Perl class for Czech RC identification.
          From Class::Utils::set_params():
                  Unknown parameter '%s'.
 
-=head1 EXAMPLE
+=head1 EXAMPLE1
 
  # Pragmas.
  use strict;
@@ -298,10 +313,49 @@ Person::ID::CZ::RC - Perl class for Czech RC identification.
  # Serial: 133
  # Checksum: 0
  # Alternate: 0
+ # Valid: 1
+
+=head1 EXAMPLE2
+
+ # Pragmas.
+ use strict;
+ use warnings;
+
+ # Modules.
+ use Person::ID::CZ::RC;
+
+ # Object.
+ my $obj = Person::ID::CZ::RC->new(
+         'rc' => '840229/1330',
+ );
+
+ # Print out.
+ print "Personal number: ".$obj->rc."\n";
+ print "Year: ".$obj->year."\n";
+ print "Month: ".$obj->month."\n";
+ print "Day: ".$obj->day."\n";
+ print "Sex: ".$obj->sex."\n";
+ print "Serial: ".$obj->serial."\n";
+ print "Checksum: ".$obj->checksum."\n";
+ print "Alternate: ".$obj->alternate."\n";
+ print "Valid: ".$obj->is_valid."\n";
+
+ # Output:
+ # Personal number: 840229/1330
+ # Year: 1984
+ # Month: 02
+ # Day: 29
+ # Sex: male
+ # Serial: 133
+ # Checksum: 0
+ # Alternate: 0
+ # Valid: 0
 
 =head1 DEPENDENCIES
 
 L<Class::Utils>,
+L<DateTime>,
+L<English>,
 L<Error::Pure>.
 
 =head1 SEE ALSO

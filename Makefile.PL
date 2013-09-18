@@ -10,8 +10,10 @@ abstract 'Perl class for Czech RC identification.';
 author 'Michal Špaček <skim@cpan.org>';
 license 'bsd';
 name 'Person-ID-CZ-RC';
-requires 'Error::Pure' => 0.11;
 requires 'Class::Utils' => 0.03;
+requires 'DateTime' => 0;
+requires 'English' => 0;
+requires 'Error::Pure' => 0.11;
 resources 'bugtracker' => 'https://rt.cpan.org/Public/Dist/Display.html'.
 	'?Name=Person-ID-CZ-RC';
 resources 'homepage' => 'https://github.com/tupinek/Person-ID-CZ-RC';
