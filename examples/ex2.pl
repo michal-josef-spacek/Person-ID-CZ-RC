@@ -9,8 +9,11 @@ use Person::ID::CZ::RC;
 
 # Object.
 my $obj = Person::ID::CZ::RC->new(
-        'rc' => '840229/1330',
+        'rc' => '840230/1337',
 );
+
+# Get error.
+my $error = $obj->error || '-';
 
 # Print out.
 print "Personal number: ".$obj->rc."\n";
@@ -22,14 +25,16 @@ print "Serial: ".$obj->serial."\n";
 print "Checksum: ".$obj->checksum."\n";
 print "Alternate: ".$obj->alternate."\n";
 print "Valid: ".$obj->is_valid."\n";
+print "Error: ".$error."\n";
 
 # Output:
-# Personal number: 840229/1330
+# Personal number: 840230/1337
 # Year: 1984
 # Month: 02
-# Day: 29
+# Day: 30
 # Sex: male
 # Serial: 133
-# Checksum: 0
+# Checksum: 7
 # Alternate: 0
 # Valid: 0
+# Error: Date isn't valid.

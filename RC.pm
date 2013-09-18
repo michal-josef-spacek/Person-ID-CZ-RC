@@ -56,6 +56,12 @@ sub day {
 	return $self->{'day'};
 }
 
+# Get error.
+sub error {
+	my $self = shift;
+	return $self->{'error'};
+}
+
 # Check validity.
 sub is_valid {
 	my $self = shift;
@@ -105,6 +111,7 @@ sub _check_validity {
 	if ($self->{'checksum'} == $checksum) {
 		$self->{'validity'} = 1;
 	} else {
+		$self->{'error'} = "Checksum isn't valid.";
 		$self->{'validity'} = 0;
 	}
 	return;
@@ -159,12 +166,15 @@ sub _parse {
 		if ($self->{'year'} <= 1953) {
 			$self->{'validity'} = 1;
 		} else {
+			$self->{'error'} = "Format of rc identification ".
+				"hasn't checksum.";
 			$self->{'validity'} = 0;
 		}
 		$self->{'alternate'} = 0;
 
 	# Not valid.
 	} else {
+		$self->{'error'} = "Format of rc identification isn't valid.";
 		$self->{'validity'} = 0;
 	}
 
@@ -177,6 +187,7 @@ sub _parse {
 		);
 	};
 	if ($EVAL_ERROR) {
+		$self->{'error'} = "Date isn't valid.";
 		$self->{'validity'} = 0;
 	}
 
@@ -201,6 +212,7 @@ Person::ID::CZ::RC - Perl class for Czech RC identification.
  my $obj = Person::ID::CZ::RC->new(%params);
  my $alternate = $obj->alternate;
  my $checksum = $obj->checksum;
+ my $error = $obj->error;
  my $is_valid = $obj->is_valid;
  my $month = $obj->month;
  my $rc = $obj->rc;
@@ -239,6 +251,11 @@ Person::ID::CZ::RC - Perl class for Czech RC identification.
 
  Get day of birth.
  Returns string with day.
+
+=item C<error()>
+
+ Get error.
+ Returns error string or undef.
 
 =item C<is_valid()>
 
@@ -293,6 +310,9 @@ Person::ID::CZ::RC - Perl class for Czech RC identification.
          'rc' => '840501/1330',
  );
 
+ # Get error.
+ my $error = $obj->error || '-';
+
  # Print out.
  print "Personal number: ".$obj->rc."\n";
  print "Year: ".$obj->year."\n";
@@ -303,6 +323,7 @@ Person::ID::CZ::RC - Perl class for Czech RC identification.
  print "Checksum: ".$obj->checksum."\n";
  print "Alternate: ".$obj->alternate."\n";
  print "Valid: ".$obj->is_valid."\n";
+ print "Error: ".$error."\n";
 
  # Output:
  # Personal number: 840501/1330
@@ -314,6 +335,7 @@ Person::ID::CZ::RC - Perl class for Czech RC identification.
  # Checksum: 0
  # Alternate: 0
  # Valid: 1
+ # Error: -
 
 =head1 EXAMPLE2
 
@@ -326,8 +348,11 @@ Person::ID::CZ::RC - Perl class for Czech RC identification.
 
  # Object.
  my $obj = Person::ID::CZ::RC->new(
-         'rc' => '840229/1330',
+         'rc' => '840230/1337',
  );
+
+ # Get error.
+ my $error = $obj->error || '-';
 
  # Print out.
  print "Personal number: ".$obj->rc."\n";
@@ -339,17 +364,19 @@ Person::ID::CZ::RC - Perl class for Czech RC identification.
  print "Checksum: ".$obj->checksum."\n";
  print "Alternate: ".$obj->alternate."\n";
  print "Valid: ".$obj->is_valid."\n";
+ print "Error: ".$error."\n";
 
  # Output:
- # Personal number: 840229/1330
+ # Personal number: 840230/1337
  # Year: 1984
  # Month: 02
- # Day: 29
+ # Day: 30
  # Sex: male
  # Serial: 133
- # Checksum: 0
+ # Checksum: 7
  # Alternate: 0
  # Valid: 0
+ # Error: Date isn't valid.
 
 =head1 DEPENDENCIES
 
