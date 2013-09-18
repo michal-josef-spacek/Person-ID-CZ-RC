@@ -174,6 +174,13 @@ sub _parse {
 
 	# Not valid.
 	} else {
+		$self->{'alternate'} = '-';
+		$self->{'checksum'} = '-';
+		$self->{'year'} = '-';
+		$self->{'month'} = '-';
+		$self->{'day'} = '-';
+		$self->{'serial'} = '-';
+		$self->{'sex'} = '-';
 		$self->{'error'} = "Format of rc identification isn't valid.";
 		$self->{'validity'} = 0;
 	}
