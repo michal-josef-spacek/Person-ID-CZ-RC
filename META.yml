@@ -22,6 +22,7 @@ meta-spec:
 name: Person-ID-CZ-RC
 no_index:
   directory:
+    - examples
     - inc
     - t
 requires:
