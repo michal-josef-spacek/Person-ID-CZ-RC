@@ -186,16 +186,18 @@ sub _parse {
 	}
 
 	# Check date.
-	eval {
-		DateTime->new(
-			'year' => $self->{'year'},
-			'month' => $self->{'month'},
-			'day' => $self->{'day'},
-		);
-	};
-	if ($EVAL_ERROR) {
-		$self->{'error'} = "Date isn't valid.";
-		$self->{'validity'} = 0;
+	if ($self->{'validity'}) {
+		eval {
+			DateTime->new(
+				'year' => $self->{'year'},
+				'month' => $self->{'month'},
+				'day' => $self->{'day'},
+			);
+		};
+		if ($EVAL_ERROR) {
+			$self->{'error'} = "Date isn't valid.";
+			$self->{'validity'} = 0;
+		}
 	}
 
 	return;
