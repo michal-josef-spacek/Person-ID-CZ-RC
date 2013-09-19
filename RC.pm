@@ -11,7 +11,7 @@ use English qw(-no_match_vars);
 use Error::Pure qw(err);
 
 # Version.
-our $VERSION = 0.01;
+our $VERSION = 0.02;
 
 # Constructor.
 sub new {
@@ -539,6 +539,6 @@ BSD license.
 
 =head1 VERSION
 
-0.01
+0.02
 
 =cut
