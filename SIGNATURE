@@ -1,0 +1,51 @@
+This file contains message digests of all files listed in MANIFEST,
+signed via the Module::Signature module, version 0.70.
+
+To verify the content in this distribution, first make sure you have
+Module::Signature installed, then type:
+
+    % cpansign -v
+
+It will check each file's integrity, as well as the signature's
+validity.  If "==> Signature verified OK! <==" is not displayed,
+the distribution may already have been compromised, and you should
+not run its Makefile.PL or Build.PL.
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+SHA1 bc3df891fba2baa4f2472a89db51188778564fcd Changes
+SHA1 2039384c67092a5dcb07a7ac68cec34f42eadf9a LICENSE
+SHA1 5f649d636672959f22bd0e4e050b28afe29d9a7c MANIFEST
+SHA1 8d156dd793bcbe7d48f4a46ea0b3f6665e2ceee2 META.yml
+SHA1 6b363d5c777ad8e2d1542fadd0ecb7e4aafe776e Makefile.PL
+SHA1 227db27426ac76c872f4f6e3d2d0b753b2b16e1a RC.pm
+SHA1 ed2db0284ec0d4d2b583bf8b879663e98a668b2e README
+SHA1 222725462702d9d5b10f829326aa0c94e7506e28 examples/ex1.pl
+SHA1 9804e999a5a792ddc6ec065cfb2c4f70268823fc examples/ex2.pl
+SHA1 0388b1cdf953e63983cd267269d00af4ee4fa36e examples/ex3.pl
+SHA1 73cf8b4c51edd0e5807f1f7f7f8efa99c884812b examples/ex4.pl
+SHA1 5892b5d00d66c8f1e542b867e22c5ffe899f2c06 examples/ex5.pl
+SHA1 8a924add836b60fb23b25c8506d45945e02f42f4 inc/Module/Install.pm
+SHA1 2d0fad3bf255f8c1e7e1e34eafccc4f595603ddc inc/Module/Install/Base.pm
+SHA1 f0e01fff7d73cd145fbf22331579918d4628ddb0 inc/Module/Install/Can.pm
+SHA1 7328966e4fda0c8451a6d3850704da0b84ac1540 inc/Module/Install/Fetch.pm
+SHA1 b62ca5e2d58fa66766ccf4d64574f9e1a2250b34 inc/Module/Install/Makefile.pm
+SHA1 1aa925be410bb3bfcd84a16985921f66073cc1d2 inc/Module/Install/Metadata.pm
+SHA1 e4196994fa75e98bdfa2be0bdeeffef66de88171 inc/Module/Install/Win32.pm
+SHA1 c3a6d0d5b84feb3280622e9599e86247d58b0d18 inc/Module/Install/WriteAll.pm
+SHA1 6520b7edf82b14eeef8b2c0e9f9885add0624608 t/Person-ID-CZ-RC/00-use.t
+SHA1 60ea9df4d4238deeaaac1fe0fd6f4f02edd20a6a t/Person-ID-CZ-RC/01-version.t
+SHA1 27a26ca5d268f289ca1c65375b64b46585b37bb6 t/Person-ID-CZ-RC/02-pod_coverage.t
+SHA1 2f1af50f7006c8ffb6ba2d996fc107dca5177adf t/Person-ID-CZ-RC/03-pod.t
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.12 (GNU/Linux)
+
+iQEcBAEBAgAGBQJSOt25AAoJEAwa+cf4dLBaJzYIAK7XcQqMGFO9GQz0Et03tpkY
+5h33xc6YXkKYYwlz7ka3r21bqkr7yw+EAL9bD7KvprdMlCSDaV62UvK0NWcV/EeK
+w4F0UjCUZ4t67Cl7uujI61MxPRbZeINl/xKTtFyTJKtD/x1MnMcnU09scRFF5bO5
+ewuVoghPktEPGVQALZDVb8j6mE0boTXXuNbZCUCPCsgnCnNgX7RCe4L7TeVzERxd
+WskL0IYAkdSCTizVqWLdt3rAKVhP967t2zaNRkPaXcj68wnFEQ/d1PqQpNUAtQk+
+8pMKiWWj2LPGT29fSQeYHhLlr6YMsl2IxZFauP3SO0lYIcS8m9gU/DJQKY1WV/U=
+=0JXY
+-----END PGP SIGNATURE-----

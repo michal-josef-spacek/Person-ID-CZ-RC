@@ -18,6 +18,7 @@ MANIFEST			This list of files
 META.yml
 RC.pm
 README
+SIGNATURE
 t/Person-ID-CZ-RC/00-use.t
 t/Person-ID-CZ-RC/01-version.t
 t/Person-ID-CZ-RC/02-pod_coverage.t
