@@ -521,6 +521,7 @@ L<Error::Pure>.
 
 L<Business::DK::CPR>,
 L<No::PersonNr>,
+L<Person::ID::CZ::RC::Generator>,
 L<Se::PersonNr>.
 
 =head1 REPOSITORY

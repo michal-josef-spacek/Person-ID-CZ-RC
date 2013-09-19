@@ -273,7 +273,8 @@ DEPENDENCIES
     Class::Utils, DateTime, English, Error::Pure.
 
 SEE ALSO
-    Business::DK::CPR, No::PersonNr, Se::PersonNr.
+    Business::DK::CPR, No::PersonNr, Person::ID::CZ::RC::Generator,
+    Se::PersonNr.
 
 REPOSITORY
     <https://github.com/tupinek/Person::ID::CZ::RC>
