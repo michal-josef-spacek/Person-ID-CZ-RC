@@ -1,5 +1,6 @@
 0.02
-- Add Person::ID::CZ::RC::Generator to SEE ALSO section in doc.
+ - Add Person::ID::CZ::RC::Generator to SEE ALSO section in doc.
+ - Rewrite Changes file to CPAN::Changes::SPEC format.
 
-0.01 (September 19, 2013)
-- First version.
+0.01 2013-09-19
+ - First version.
