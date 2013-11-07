@@ -23,3 +23,8 @@ t/Person-ID-CZ-RC/00-use.t
 t/Person-ID-CZ-RC/01-version.t
 t/Person-ID-CZ-RC/02-pod_coverage.t
 t/Person-ID-CZ-RC/03-pod.t
+t/Person-ID-CZ-RC/04-new.t
+t/Person-ID-CZ-RC/05-alternate.t
+t/Person-ID-CZ-RC/06-checksum.t
+t/Person-ID-CZ-RC/07-day.t
+t/Person-ID-CZ-RC/08-error.t
