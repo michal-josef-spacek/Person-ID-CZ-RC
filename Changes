@@ -1,4 +1,5 @@
 0.03
+ - Add minimal Perl version.
 
 0.02 2013-09-21
  - Add Person::ID::CZ::RC::Generator to SEE ALSO section in doc.
