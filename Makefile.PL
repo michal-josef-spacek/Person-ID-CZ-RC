@@ -10,6 +10,7 @@ abstract 'Perl class for Czech RC identification.';
 author 'Michal Špaček <skim@cpan.org>';
 license 'bsd';
 name 'Person-ID-CZ-RC';
+readme_from 'RC.pm';
 requires 'Class::Utils' => 0.03;
 requires 'DateTime' => 0;
 requires 'English' => 0;
