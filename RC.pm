@@ -11,7 +11,7 @@ use English qw(-no_match_vars);
 use Error::Pure qw(err);
 
 # Version.
-our $VERSION = 0.04;
+our $VERSION = 0.05;
 
 # Constructor.
 sub new {
@@ -556,6 +556,6 @@ L<http://skim.cz>
 
 =head1 VERSION
 
-0.04
+0.05
 
 =cut
