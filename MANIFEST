@@ -29,5 +29,10 @@ t/Person-ID-CZ-RC/04-alternate.t
 t/Person-ID-CZ-RC/05-checksum.t
 t/Person-ID-CZ-RC/06-day.t
 t/Person-ID-CZ-RC/07-error.t
+t/Person-ID-CZ-RC/08-is_valid.t
+t/Person-ID-CZ-RC/09-month.t
+t/Person-ID-CZ-RC/10-rc.t
+t/Person-ID-CZ-RC/11-serial.t
+t/Person-ID-CZ-RC/12-year.t
 xt/Person-ID-CZ-RC/01-pod_coverage.t
 xt/Person-ID-CZ-RC/02-pod.t
