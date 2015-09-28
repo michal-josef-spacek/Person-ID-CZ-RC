@@ -123,25 +123,25 @@ sub _parse {
 	if ($self->{'rc'} =~ m/^(\d\d)(\d\d)(\d\d)\/(\d\d\d)(\d)$/ms
 		|| $self->{'rc'} =~ m/^(\d\d)(\d\d)(\d\d)(\d\d\d)(\d)$/ms) {
 
-		$self->{'year'} = 1900 + $1;
+		$self->{'year'} = int(1900 + $1);
 		if ($2 > 70) {
 			$self->{'alternate'} = 1;
-			$self->{'month'} = $2 - 70;
+			$self->{'month'} = int($2 - 70);
 			$self->{'sex'} = 'female';
 		} elsif ($2 > 50) {
-			$self->{'month'} = $2 - 50;
+			$self->{'month'} = int($2 - 50);
 			$self->{'sex'} = 'female';
 			$self->{'alternate'} = 0;
 		} elsif ($2 > 20) {
-			$self->{'month'} = $2 - 20;
+			$self->{'month'} = int($2 - 20);
 			$self->{'alternate'} = 1;
 			$self->{'sex'} = 'male';
 		} else {
 			$self->{'alternate'} = 0;
-			$self->{'month'} = $2;
+			$self->{'month'} = int($2);
 			$self->{'sex'} = 'male';
 		}
-		$self->{'day'} = $3;
+		$self->{'day'} = int($3);
 		$self->{'serial'} = $4;
 		$self->{'checksum'} = $5;
 
@@ -152,15 +152,15 @@ sub _parse {
 	} elsif ($self->{'rc'} =~ m/^(\d\d)(\d\d)(\d\d)\/(\d\d\d)$/ms
 		|| $self->{'rc'} =~ m/^(\d\d)(\d\d)(\d\d)(\d\d\d)$/ms) {
 
-		$self->{'year'} = 1900 + $1;
+		$self->{'year'} = int(1900 + $1);
 		if ($2 > 50) {
-			$self->{'month'} = $2 - 50;
+			$self->{'month'} = int($2 - 50);
 			$self->{'sex'} = 'female';
 		} else {
-			$self->{'month'} = $2;
+			$self->{'month'} = int($2);
 			$self->{'sex'} = 'male';
 		}
-		$self->{'day'} = $3;
+		$self->{'day'} = int($3);
 		$self->{'serial'} = $4;
 		$self->{'checksum'} = '-';
 		if ($self->{'year'} <= 1953) {

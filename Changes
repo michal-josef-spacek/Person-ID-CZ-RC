@@ -1,6 +1,7 @@
 0.04
  - Add 'readme_from' directive to Makefile.PL.
  - Fix LICENSE file.
+ - Fix day, month and year numbers. There are ints.
  - Improve LICENSE AND COPYRIGHT section in doc.
  - Improve SEE ALSO section in doc.
  - Move author tests to xt/ directory.
