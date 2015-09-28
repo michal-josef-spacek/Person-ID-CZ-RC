@@ -273,8 +273,17 @@ DEPENDENCIES
     Class::Utils, DateTime, English, Error::Pure.
 
 SEE ALSO
-    Business::DK::CPR, No::PersonNr, Person::ID::CZ::RC::Generator,
-    Se::PersonNr.
+    Business::DK::CPR
+        Danish CPR (SSN) number generator/validator
+
+    No::PersonNr
+        Check Norwegian Social security numbers
+
+    Person::ID::CZ::RC::Generator
+        Perl class for Czech RC identification generation.
+
+    Se::PersonNr
+        Module for validating and generating a Swedish personnummer.
 
 REPOSITORY
     <https://github.com/tupinek/Person::ID::CZ::RC>
