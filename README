@@ -70,11 +70,9 @@ ERRORS
                      Unknown parameter '%s'.
 
 EXAMPLE1
-     # Pragmas.
      use strict;
      use warnings;
 
-     # Modules.
      use Person::ID::CZ::RC;
 
      # Object.
@@ -110,11 +108,9 @@ EXAMPLE1
      # Error: -
 
 EXAMPLE2
-     # Pragmas.
      use strict;
      use warnings;
 
-     # Modules.
      use Person::ID::CZ::RC;
 
      # Object.
@@ -150,11 +146,9 @@ EXAMPLE2
      # Error: Date isn't valid.
 
 EXAMPLE3
-     # Pragmas.
      use strict;
      use warnings;
 
-     # Modules.
      use Person::ID::CZ::RC;
 
      # Object.
@@ -190,11 +184,9 @@ EXAMPLE3
      # Error: Checksum isn't valid.
 
 EXAMPLE4
-     # Pragmas.
      use strict;
      use warnings;
 
-     # Modules.
      use Person::ID::CZ::RC;
 
      # Object.
@@ -230,11 +222,9 @@ EXAMPLE4
      # Error: Format of rc identification hasn't checksum.
 
 EXAMPLE5
-     # Pragmas.
      use strict;
      use warnings;
 
-     # Modules.
      use Person::ID::CZ::RC;
 
      # Object.

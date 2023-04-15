@@ -1,16 +1,13 @@
 package Person::ID::CZ::RC;
 
-# Pragmas.
 use strict;
 use warnings;
 
-# Modules.
 use Class::Utils qw(set_params);
 use DateTime;
 use English qw(-no_match_vars);
 use Error::Pure qw(err);
 
-# Version.
 our $VERSION = 0.05;
 
 # Constructor.
@@ -307,11 +304,9 @@ Person::ID::CZ::RC - Perl class for Czech RC identification.
 
 =head1 EXAMPLE1
 
- # Pragmas.
  use strict;
  use warnings;
 
- # Modules.
  use Person::ID::CZ::RC;
 
  # Object.
@@ -348,11 +343,9 @@ Person::ID::CZ::RC - Perl class for Czech RC identification.
 
 =head1 EXAMPLE2
 
- # Pragmas.
  use strict;
  use warnings;
 
- # Modules.
  use Person::ID::CZ::RC;
 
  # Object.
@@ -389,11 +382,9 @@ Person::ID::CZ::RC - Perl class for Czech RC identification.
 
 =head1 EXAMPLE3
 
- # Pragmas.
  use strict;
  use warnings;
 
- # Modules.
  use Person::ID::CZ::RC;
 
  # Object.
@@ -430,11 +421,9 @@ Person::ID::CZ::RC - Perl class for Czech RC identification.
 
 =head1 EXAMPLE4
 
- # Pragmas.
  use strict;
  use warnings;
 
- # Modules.
  use Person::ID::CZ::RC;
 
  # Object.
@@ -471,11 +460,9 @@ Person::ID::CZ::RC - Perl class for Czech RC identification.
 
 =head1 EXAMPLE5
 
- # Pragmas.
  use strict;
  use warnings;
 
- # Modules.
  use Person::ID::CZ::RC;
 
  # Object.
