@@ -1,4 +1,4 @@
-0.05
+0.05 2023-12-05T15:15:36+01:00
  - Add tests for sex() method.
  - Fix SYNOPSIS section in doc.
  - Fix use lib '.' in Makefile.PL.
