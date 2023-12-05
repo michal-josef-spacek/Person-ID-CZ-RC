@@ -1,3 +1,5 @@
+0.06
+
 0.05 2023-12-05T15:15:36+01:00
  - Add tests for sex() method.
  - Fix SYNOPSIS section in doc.
