@@ -337,6 +337,8 @@ Returns string with year.
 
 =head1 EXAMPLE1
 
+=for comment filename=parse_and_print_rc_ok.pl
+
  use strict;
  use warnings;
 
@@ -375,6 +377,8 @@ Returns string with year.
  # Error: -
 
 =head1 EXAMPLE2
+
+=for comment filename=parse_and_print_rc_fail_date.pl
 
  use strict;
  use warnings;
@@ -415,6 +419,8 @@ Returns string with year.
 
 =head1 EXAMPLE3
 
+=for comment filename=parse_and_print_rc_fail_bad_checksum.pl
+
  use strict;
  use warnings;
 
@@ -454,6 +460,8 @@ Returns string with year.
 
 =head1 EXAMPLE4
 
+=for comment filename=parse_and_print_rc_fail_no_checksum.pl
+
  use strict;
  use warnings;
 
@@ -492,6 +500,8 @@ Returns string with year.
  # Error: Format of rc identification hasn't checksum.
 
 =head1 EXAMPLE5
+
+=for comment filename=parse_and_print_rc_fail_format.pl
 
  use strict;
  use warnings;
