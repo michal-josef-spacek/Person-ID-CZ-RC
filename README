@@ -276,7 +276,7 @@ SEE ALSO
         Module for validating and generating a Swedish personnummer.
 
 REPOSITORY
-    <https://github.com/tupinek/Person::ID::CZ::RC>
+    <https://github.com/michal-josef-spacek/Person::ID::CZ::RC>
 
 AUTHOR
     Michal Josef Špaček <mailto:skim@cpan.org>

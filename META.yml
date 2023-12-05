@@ -32,7 +32,7 @@ requires:
   perl: 5.6.2
 resources:
   bugtracker: https://rt.cpan.org/Public/Dist/Display.html?Name=Person-ID-CZ-RC
-  homepage: https://github.com/tupinek/Person-ID-CZ-RC
+  homepage: https://github.com/michal-josef-spacek/Person-ID-CZ-RC
   license: http://opensource.org/licenses/bsd-license.php
-  repository: git://github.com/tupinek/Person-ID-CZ-RC
+  repository: git://github.com/michal-josef-spacek/Person-ID-CZ-RC
 version: '0.05'
