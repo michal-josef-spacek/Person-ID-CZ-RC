@@ -219,6 +219,7 @@ Person::ID::CZ::RC - Perl class for Czech RC identification.
  my $obj = Person::ID::CZ::RC->new(%params);
  my $alternate = $obj->alternate;
  my $checksum = $obj->checksum;
+ my $day = $obj->day;
  my $error = $obj->error;
  my $is_valid = $obj->is_valid;
  my $month = $obj->month;
