@@ -230,72 +230,103 @@ Person::ID::CZ::RC - Perl class for Czech RC identification.
 
 =head1 METHODS
 
-=over 8
+=head2 C<new>
 
-=item C<new(%params)>
+ my $obj = Person::ID::CZ::RC->new(%params);
 
- Constructor.
+Constructor.
 
 =over 8
 
 =item * C<rc>
 
- Input Czech RC identification.
- It is required.
+Input Czech RC identification.
+
+It is required.
 
 =back
 
-=item C<alternate()>
+Returns instance of object.
 
- Get flag, that means alternate RC identification.
- Returns 0/1.
+=head2 C<alternate>
 
-=item C<checksum()>
+ my $alternate = $obj->alternate;
 
- Get checksum.
- Returns string with one number character or '-'.
+Get flag, that means alternate RC identification.
 
-=item C<day()>
+Returns 0/1.
 
- Get day of birth.
- Returns string with day.
+=head2 C<checksum>
 
-=item C<error()>
+ my $checksum = $obj->checksum;
 
- Get error.
- Returns error string or undef.
+Get checksum.
 
-=item C<is_valid()>
+Returns string with one number character or '-'.
 
- Get flag, that means validity of rc identification.
- Returns 0/1.
+=head2 C<day>
 
-=item C<month()>
+ my $day = $obj->day;
 
- Get month of birth.
- Returns string with month.
+Get day of birth.
 
-=item C<rc()>
+Returns string with day.
 
- Get rc identification.
- Returns string with rc identification.
+=head2 C<error>
 
-=item C<serial()>
+ my $error = $obj->error;
 
- Get serial part of rc identification.
- Returns string with three numbers.
+Get error.
 
-=item C<sex()>
+Returns error string or undef.
 
- Get flag, that means sex of person.
- Returns male/female string.
+=head2 C<is_valid>
 
-=item C<year()>
+ my $is_valid = $obj->is_valid;
 
- Get year of birth.
- Returns string with year.
+Get flag, that means validity of rc identification.
 
-=back
+Returns 0/1.
+
+=head2 C<month>
+
+ my $month = $obj->month;
+
+Get month of birth.
+
+Returns string with month.
+
+=head2 C<rc>
+
+ my $rc = $obj->rc;
+
+Get rc identification.
+
+Returns string with rc identification.
+
+=head2 C<serial>
+
+ my $serial = $obj->serial;
+
+Get serial part of rc identification.
+
+Returns string with three numbers.
+
+=head2 C<sex>
+
+ my $sex = $obj->sex;
+
+Get flag, that means sex of person.
+
+Returns male/female string.
+
+=head2 C<year>
+
+ my $year = $obj->year;
+
+Get year of birth.
+
+Returns string with year.
 
 =head1 ERRORS
 
