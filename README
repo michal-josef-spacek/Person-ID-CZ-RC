@@ -3,6 +3,7 @@ NAME
 
 SYNOPSIS
      use Person::ID::CZ::RC;
+
      my $obj = Person::ID::CZ::RC->new(%params);
      my $alternate = $obj->alternate;
      my $checksum = $obj->checksum;

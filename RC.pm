@@ -215,6 +215,7 @@ Person::ID::CZ::RC - Perl class for Czech RC identification.
 =head1 SYNOPSIS
 
  use Person::ID::CZ::RC;
+
  my $obj = Person::ID::CZ::RC->new(%params);
  my $alternate = $obj->alternate;
  my $checksum = $obj->checksum;
