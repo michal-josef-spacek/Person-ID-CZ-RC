@@ -1,4 +1,5 @@
 0.05
+ - Add tests for sex() method.
  - Fix SYNOPSIS section in doc.
  - Fix use lib '.' in Makefile.PL.
  - Improve LICENSE AND COPYRIGHT section in doc.
